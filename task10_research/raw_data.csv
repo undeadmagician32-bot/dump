@@ -1,0 +1,13 @@
+id,group,hangul_count,ascii_count,text,codepoints,utf8_bytes
+A01,ascii_only,0,5,abcde,5,5
+A02,ascii_only,0,5,klmno,5,5
+A03,ascii_only,0,5,pqrst,5,5
+A04,ascii_only,0,5,uvwxy,5,5
+M01,mixed,2,3,ab가나c,5,9
+M02,mixed,2,3,xy한글z,5,9
+M03,mixed,2,3,go세상h,5,9
+M04,mixed,2,3,hi우리j,5,9
+H01,hangul_only,5,0,가나다라마,5,15
+H02,hangul_only,5,0,바사아자차,5,15
+H03,hangul_only,5,0,카타파하가,5,15
+H04,hangul_only,5,0,나라마바사,5,15

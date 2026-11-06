@@ -1,0 +1,20 @@
+/* 인쇄물에도 자가 점검의 한계와 안전 안내를 보존합니다. */
+@media print {
+  #results-screen:not([hidden]) .final-note {
+    display: block !important;
+    margin-top: 12px;
+    padding: 9px 11px;
+    border: 1px solid #aebbd0;
+    background: #fff;
+    break-inside: avoid;
+  }
+
+  #results-screen:not([hidden]) .final-note strong {
+    font-size: 9pt;
+  }
+
+  #results-screen:not([hidden]) .final-note p {
+    margin-top: 4px;
+    font-size: 8pt;
+  }
+}

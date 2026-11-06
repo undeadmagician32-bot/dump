@@ -1,0 +1,33 @@
+/* 추가 접근성 보완: 건너뛰기 링크와 키보드 초점 표시 */
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 8px;
+  left: 8px;
+  padding: 12px 16px;
+  transform: translateY(-160%);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  background: #173f9f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid #173f9f;
+  outline-offset: 3px;
+}
+
+:where(a, button, [tabindex="-1"]):focus-visible {
+  outline: 3px solid #1748c2;
+  outline-offset: 3px;
+}
+
+@media (forced-colors: active) {
+  .skip-link:focus,
+  :where(a, button, [tabindex="-1"]):focus-visible {
+    outline: 3px solid Highlight;
+  }
+}
